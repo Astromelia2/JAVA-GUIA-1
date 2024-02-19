@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Eje6">
+  <ClassDiagramComponents>
+    <Class name="Carrera" package="Eje6" visibility="public" xPosition="1718.0" yPosition="1513.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="creditosTotales" type="int" visibility="private"/>
+        <Field name="semestres" type="int" visibility="private"/>
+        <Field name="nivel" type="String" visibility="private"/>
+        <Field name="facultad" type="Facultad" visibility="private"/>
+        <Field name="cursos" type="List&lt;Curso&gt;" visibility="private"/>
+        <Field name="estudiantes" type="List&lt;Estudiante&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="creditosTotales"/>
+          <Argument type="int" name="semestres"/>
+          <Argument type="String" name="nivel"/>
+          <Argument type="Facultad" name="facultad"/>
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+          <Argument type="List&lt;Estudiante&gt;" name="estudiantes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCreditosTotales" returnType="int" visibility="public"/>
+        <Method name="setCreditosTotales" returnType="void" visibility="public">
+          <Argument type="int" name="creditosTotales"/>
+        </Method>
+        <Method name="getSemestres" returnType="int" visibility="public"/>
+        <Method name="setSemestres" returnType="void" visibility="public">
+          <Argument type="int" name="semestres"/>
+        </Method>
+        <Method name="getNivel" returnType="String" visibility="public"/>
+        <Method name="setNivel" returnType="void" visibility="public">
+          <Argument type="String" name="nivel"/>
+        </Method>
+        <Method name="getFacultad" returnType="Facultad" visibility="public"/>
+        <Method name="setFacultad" returnType="void" visibility="public">
+          <Argument type="Facultad" name="facultad"/>
+        </Method>
+        <Method name="getCursos" returnType="List&lt;Curso&gt;" visibility="public"/>
+        <Method name="setCursos" returnType="void" visibility="public">
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+        </Method>
+        <Method name="getEstudiantes" returnType="List&lt;Estudiante&gt;" visibility="public"/>
+        <Method name="setEstudiantes" returnType="void" visibility="public">
+          <Argument type="List&lt;Estudiante&gt;" name="estudiantes"/>
+        </Method>
+        <Method name="añadirCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+        <Method name="eliminarCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+        <Method name="añadirEstudiantes" returnType="void" visibility="public">
+          <Argument type="Estudiante" name="estudiante"/>
+        </Method>
+        <Method name="eliminarEstudiantes" returnType="void" visibility="public">
+          <Argument type="Estudiante" name="estudiante"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Curso" package="Eje6" visibility="public" xPosition="69.0" yPosition="1334.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="codigo" type="int" visibility="private"/>
+        <Field name="creditos" type="int" visibility="private"/>
+        <Field name="salon" type="String" visibility="private"/>
+        <Field name="edificio" type="String" visibility="private"/>
+        <Field name="carrera" type="Carrera" visibility="private"/>
+        <Field name="profesores" type="List&lt;Profesor&gt;" visibility="private"/>
+        <Field name="estudiantes" type="List&lt;Estudiante&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="codigo"/>
+          <Argument type="int" name="creditos"/>
+          <Argument type="String" name="salon"/>
+          <Argument type="String" name="edificio"/>
+          <Argument type="Carrera" name="carrera"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCodigo" returnType="int" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="int" name="codigo"/>
+        </Method>
+        <Method name="getCreditos" returnType="int" visibility="public"/>
+        <Method name="setCreditos" returnType="void" visibility="public">
+          <Argument type="int" name="creditos"/>
+        </Method>
+        <Method name="getSalon" returnType="String" visibility="public"/>
+        <Method name="setSalon" returnType="void" visibility="public">
+          <Argument type="String" name="salon"/>
+        </Method>
+        <Method name="getEdificio" returnType="String" visibility="public"/>
+        <Method name="setEdificio" returnType="void" visibility="public">
+          <Argument type="String" name="edificio"/>
+        </Method>
+        <Method name="getCarrera" returnType="Carrera" visibility="public"/>
+        <Method name="setCarrera" returnType="void" visibility="public">
+          <Argument type="Carrera" name="carrera"/>
+        </Method>
+        <Method name="getProfesores" returnType="List&lt;Profesor&gt;" visibility="public"/>
+        <Method name="setProfesores" returnType="void" visibility="public">
+          <Argument type="List&lt;Profesor&gt;" name="profesores"/>
+        </Method>
+        <Method name="getEstudiantes" returnType="List&lt;Estudiante&gt;" visibility="public"/>
+        <Method name="setEstudiantes" returnType="void" visibility="public">
+          <Argument type="List&lt;Estudiante&gt;" name="estudiantes"/>
+        </Method>
+        <Method name="añadirEstudiantes" returnType="void" visibility="public">
+          <Argument type="Estudiante" name="estudiante"/>
+        </Method>
+        <Method name="eliminarEstudiantes" returnType="void" visibility="public">
+          <Argument type="Estudiante" name="estudiante"/>
+        </Method>
+        <Method name="añadirProfesor" returnType="void" visibility="public">
+          <Argument type="Profesor" name="profesor"/>
+        </Method>
+        <Method name="eliminarProfesor" returnType="void" visibility="public">
+          <Argument type="Profesor" name="profesor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Estudiante" package="Eje6" visibility="public" xPosition="1084.0" yPosition="928.0">
+      <Fields>
+        <Field name="colegio" type="String" visibility="private"/>
+        <Field name="fechaIngreso" type="String" visibility="private"/>
+        <Field name="carreras" type="List&lt;Carrera&gt;" visibility="private"/>
+        <Field name="cursos" type="List&lt;Curso&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="colegio"/>
+          <Argument type="String" name="fechaIngreso"/>
+          <Argument type="List&lt;Carrera&gt;" name="carreras"/>
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+          <Argument type="String" name="cedula"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="fechaNacimiento"/>
+          <Argument type="String" name="lugarNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColegio" returnType="String" visibility="public"/>
+        <Method name="setColegio" returnType="void" visibility="public">
+          <Argument type="String" name="colegio"/>
+        </Method>
+        <Method name="getFechaIngreso" returnType="String" visibility="public"/>
+        <Method name="setFechaIngreso" returnType="void" visibility="public">
+          <Argument type="String" name="fechaIngreso"/>
+        </Method>
+        <Method name="getCarreras" returnType="List&lt;Carrera&gt;" visibility="public"/>
+        <Method name="setCarreras" returnType="void" visibility="public">
+          <Argument type="List&lt;Carrera&gt;" name="carreras"/>
+        </Method>
+        <Method name="getCursos" returnType="List&lt;Curso&gt;" visibility="public"/>
+        <Method name="setCursos" returnType="void" visibility="public">
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+        </Method>
+        <Method name="añadirCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+        <Method name="eliminarCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+        <Method name="añadirCarrera" returnType="void" visibility="public">
+          <Argument type="Carrera" name="carrera"/>
+        </Method>
+        <Method name="eliminarCarrera" returnType="void" visibility="public">
+          <Argument type="Carrera" name="carrera"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Facultad" package="Eje6" visibility="public" xPosition="2033.0" yPosition="479.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="codigo" type="String" visibility="private"/>
+        <Field name="carreras" type="List&lt;Carrera&gt;" visibility="private"/>
+        <Field name="profesores" type="List&lt;Profesor&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="codigo"/>
+          <Argument type="List&lt;Carrera&gt;" name="carreras"/>
+          <Argument type="List&lt;Profesor&gt;" name="profesores"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getCodigo" returnType="String" visibility="public"/>
+        <Method name="setCodigo" returnType="void" visibility="public">
+          <Argument type="String" name="codigo"/>
+        </Method>
+        <Method name="getCarreras" returnType="List&lt;Carrera&gt;" visibility="public"/>
+        <Method name="setCarreras" returnType="void" visibility="public">
+          <Argument type="List&lt;Carrera&gt;" name="carreras"/>
+        </Method>
+        <Method name="getProfesores" returnType="List&lt;Profesor&gt;" visibility="public"/>
+        <Method name="setProfesores" returnType="void" visibility="public">
+          <Argument type="List&lt;Profesor&gt;" name="profesores"/>
+        </Method>
+        <Method name="añadirCarrera" returnType="void" visibility="public">
+          <Argument type="Carrera" name="carrera"/>
+        </Method>
+        <Method name="eliminarCarrera" returnType="void" visibility="public">
+          <Argument type="Carrera" name="carrera"/>
+        </Method>
+        <Method name="añadirProfesor" returnType="void" visibility="public">
+          <Argument type="Profesor" name="profesor"/>
+        </Method>
+        <Method name="eliminarProfesor" returnType="void" visibility="public">
+          <Argument type="Profesor" name="profesor"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="Eje6" visibility="public" xPosition="1353.0" yPosition="58.0">
+      <Fields>
+        <Field name="cedula" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="fechaNacimiento" type="String" visibility="private"/>
+        <Field name="lugarNacimiento" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="cedula"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="fechaNacimiento"/>
+          <Argument type="String" name="lugarNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCedula" returnType="String" visibility="public"/>
+        <Method name="setCedula" returnType="void" visibility="public">
+          <Argument type="String" name="cedula"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getFechaNacimiento" returnType="String" visibility="public"/>
+        <Method name="setFechaNacimiento" returnType="void" visibility="public">
+          <Argument type="String" name="fechaNacimiento"/>
+        </Method>
+        <Method name="getLugarNacimiento" returnType="String" visibility="public"/>
+        <Method name="setLugarNacimiento" returnType="void" visibility="public">
+          <Argument type="String" name="lugarNacimiento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Profesor" package="Eje6" visibility="public" xPosition="69.0" yPosition="470.0">
+      <Fields>
+        <Field name="nacionalidad" type="String" visibility="private"/>
+        <Field name="profesion" type="String" visibility="private"/>
+        <Field name="sueldo" type="double" visibility="private"/>
+        <Field name="facultad" type="Facultad" visibility="private"/>
+        <Field name="cursos" type="List&lt;Curso&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nacionalidad"/>
+          <Argument type="String" name="profesion"/>
+          <Argument type="double" name="sueldo"/>
+          <Argument type="Facultad" name="facultad"/>
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+          <Argument type="String" name="cedula"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="fechaNacimiento"/>
+          <Argument type="String" name="lugarNacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNacionalidad" returnType="String" visibility="public"/>
+        <Method name="setNacionalidad" returnType="void" visibility="public">
+          <Argument type="String" name="nacionalidad"/>
+        </Method>
+        <Method name="getProfesion" returnType="String" visibility="public"/>
+        <Method name="setProfesion" returnType="void" visibility="public">
+          <Argument type="String" name="profesion"/>
+        </Method>
+        <Method name="getSueldo" returnType="double" visibility="public"/>
+        <Method name="setSueldo" returnType="void" visibility="public">
+          <Argument type="double" name="sueldo"/>
+        </Method>
+        <Method name="getFacultad" returnType="Facultad" visibility="public"/>
+        <Method name="setFacultad" returnType="void" visibility="public">
+          <Argument type="Facultad" name="facultad"/>
+        </Method>
+        <Method name="getCursos" returnType="List&lt;Curso&gt;" visibility="public"/>
+        <Method name="setCursos" returnType="void" visibility="public">
+          <Argument type="List&lt;Curso&gt;" name="cursos"/>
+        </Method>
+        <Method name="añadirCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+        <Method name="eliminarCurso" returnType="void" visibility="public">
+          <Argument type="Curso" name="curso"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Universidad" package="Eje6" visibility="public" xPosition="2028.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="nombreRector" type="String" visibility="private"/>
+        <Field name="ciudad" type="String" visibility="private"/>
+        <Field name="facultades" type="List&lt;Facultad&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="nombreRector"/>
+          <Argument type="String" name="ciudad"/>
+          <Argument type="List&lt;Facultad&gt;" name="facultades"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getNombreRector" returnType="String" visibility="public"/>
+        <Method name="setNombreRector" returnType="void" visibility="public">
+          <Argument type="String" name="nombreRector"/>
+        </Method>
+        <Method name="getCiudad" returnType="String" visibility="public"/>
+        <Method name="setCiudad" returnType="void" visibility="public">
+          <Argument type="String" name="ciudad"/>
+        </Method>
+        <Method name="getFacultades" returnType="List&lt;Facultad&gt;" visibility="public"/>
+        <Method name="setFacultades" returnType="void" visibility="public">
+          <Argument type="List&lt;Facultad&gt;" name="facultades"/>
+        </Method>
+        <Method name="añadirFacultad" returnType="void" visibility="public">
+          <Argument type="Facultad" name="facultad"/>
+        </Method>
+        <Method name="eliminarFacultad" returnType="void" visibility="public">
+          <Argument type="Facultad" name="facultad"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="profesores" source="Eje6.Curso" target="Eje6.Profesor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Profesor&gt;"/>
+    <UseRelation source="Eje6.Profesor" target="Eje6.Facultad" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="facultades" source="Eje6.Universidad" target="Eje6.Facultad" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Facultad&gt;"/>
+    <HasRelation name="estudiantes" source="Eje6.Curso" target="Eje6.Estudiante" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Estudiante&gt;"/>
+    <IsRelation name="is" source="Eje6.Estudiante" target="Eje6.Persona"/>
+    <HasRelation name="carrera" source="Eje6.Curso" target="Eje6.Carrera" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cursos" source="Eje6.Carrera" target="Eje6.Curso" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Curso&gt;"/>
+    <IsRelation name="is" source="Eje6.Profesor" target="Eje6.Persona"/>
+    <HasRelation name="carreras" source="Eje6.Estudiante" target="Eje6.Carrera" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Carrera&gt;"/>
+    <UseRelation source="Eje6.Curso" target="Eje6.Profesor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Curso" target="Eje6.Estudiante" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cursos" source="Eje6.Estudiante" target="Eje6.Curso" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Curso&gt;"/>
+    <HasRelation name="facultad" source="Eje6.Profesor" target="Eje6.Facultad" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cursos" source="Eje6.Profesor" target="Eje6.Curso" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Curso&gt;"/>
+    <UseRelation source="Eje6.Carrera" target="Eje6.Estudiante" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Profesor" target="Eje6.Curso" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="estudiantes" source="Eje6.Carrera" target="Eje6.Estudiante" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Estudiante&gt;"/>
+    <UseRelation source="Eje6.Facultad" target="Eje6.Profesor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Curso" target="Eje6.Carrera" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="profesores" source="Eje6.Facultad" target="Eje6.Profesor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..*" collectionType="List&lt;Profesor&gt;"/>
+    <HasRelation name="facultad" source="Eje6.Carrera" target="Eje6.Facultad" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Carrera" target="Eje6.Facultad" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Estudiante" target="Eje6.Carrera" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Universidad" target="Eje6.Facultad" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Carrera" target="Eje6.Curso" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Estudiante" target="Eje6.Curso" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Eje6.Facultad" target="Eje6.Carrera" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="carreras" source="Eje6.Facultad" target="Eje6.Carrera" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Carrera&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Eje2">
+  <ClassDiagramComponents>
+    <Class name="Reloj" package="Eje2" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="hora" type="int" visibility="private"/>
+        <Field name="segundos" type="int" visibility="private"/>
+        <Field name="minutos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="h"/>
+          <Argument type="int" name="s"/>
+          <Argument type="int" name="m"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="consultarLaHora" returnType="void" visibility="public"/>
+        <Method name="getHora" returnType="int" visibility="public"/>
+        <Method name="setHora" returnType="void" visibility="public">
+          <Argument type="int" name="hora"/>
+        </Method>
+        <Method name="getSegundos" returnType="int" visibility="public"/>
+        <Method name="setSegundos" returnType="void" visibility="public">
+          <Argument type="int" name="segundos"/>
+        </Method>
+        <Method name="getMinutos" returnType="int" visibility="public"/>
+        <Method name="setMinutos" returnType="void" visibility="public">
+          <Argument type="int" name="minutos"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

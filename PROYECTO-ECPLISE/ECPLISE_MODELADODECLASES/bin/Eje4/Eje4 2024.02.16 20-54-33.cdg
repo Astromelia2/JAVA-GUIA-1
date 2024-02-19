@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Eje4">
+  <ClassDiagramComponents>
+    <Class name="Proyectil" package="Eje4" visibility="public" xPosition="53.0" yPosition="24.0">
+      <Fields>
+        <Field name="angulo" type="double" visibility="private"/>
+        <Field name="velocidad" type="double" visibility="private"/>
+        <Field name="alcance" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="angulo"/>
+          <Argument type="double" name="velocidad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAngulo" returnType="double" visibility="public"/>
+        <Method name="setAngulo" returnType="void" visibility="public">
+          <Argument type="double" name="angulo"/>
+        </Method>
+        <Method name="getVelocidad" returnType="double" visibility="public"/>
+        <Method name="setVelocidad" returnType="void" visibility="public">
+          <Argument type="double" name="velocidad"/>
+        </Method>
+        <Method name="alcance" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

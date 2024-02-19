@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Fecha">
+  <ClassDiagramComponents>
+    <Class name="Fecha" package="Eje3" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="año" type="int" visibility="private"/>
+        <Field name="mes" type="int" visibility="private"/>
+        <Field name="dia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="año"/>
+          <Argument type="int" name="mes"/>
+          <Argument type="int" name="dia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="consultarLaFecha" returnType="void" visibility="public"/>
+        <Method name="getAño" returnType="int" visibility="public"/>
+        <Method name="setAño" returnType="void" visibility="public">
+          <Argument type="int" name="año"/>
+        </Method>
+        <Method name="getMes" returnType="int" visibility="public"/>
+        <Method name="setMes" returnType="void" visibility="public">
+          <Argument type="int" name="mes"/>
+        </Method>
+        <Method name="getDia" returnType="int" visibility="public"/>
+        <Method name="setDia" returnType="void" visibility="public">
+          <Argument type="int" name="dia"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Eje1">
+  <ClassDiagramComponents>
+    <Class name="Fraccionario" package="Eje1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="numerador" type="double" visibility="private"/>
+        <Field name="denominador" type="double" visibility="private"/>
+        <Field name="cociente" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="division" returnType="void" visibility="public"/>
+        <Method name="getNumerador" returnType="double" visibility="public"/>
+        <Method name="setNumerador" returnType="void" visibility="public">
+          <Argument type="double" name="numerador"/>
+        </Method>
+        <Method name="getDenominador" returnType="double" visibility="public"/>
+        <Method name="setDenominador" returnType="void" visibility="public">
+          <Argument type="double" name="denominador"/>
+        </Method>
+        <Method name="getCociente" returnType="double" visibility="public"/>
+        <Method name="setCociente" returnType="void" visibility="public">
+          <Argument type="double" name="cociente"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
